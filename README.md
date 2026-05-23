@@ -1,4 +1,4 @@
-# inhalo_mindfulness_session_generator
+
 # 🌿 Inhalo – Personalized Mindfulness Session Generator
 
 Inhalo is a web-based mindfulness and wellness platform designed to help users improve their mental well-being through guided breathing exercises, mindfulness sessions, progress tracking, and personal journaling.
@@ -6,6 +6,10 @@ Inhalo is a web-based mindfulness and wellness platform designed to help users i
 Developed as a college mini-project, Inhalo provides a simple and engaging interface for users to build healthy mindfulness habits and monitor their wellness journey.
 
 ---
+## Live Website
+
+https://inhalo.netlify.app/
+
 
 ## 📌 Project Overview
 
