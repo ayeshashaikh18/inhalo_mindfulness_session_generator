@@ -1,0 +1,64 @@
+@import url('landing.css'); /* Reuse variables and base styles */
+
+/* Hero */
+.hero {
+  background: url('contact-bg.jpg') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(61, 49, 74, 0.65);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact form */
+.contact-form {
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--plum-ink);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--dove-gray);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--lavender-deep);
+  outline: none;
+}
+
+button.btn {
+  display: inline-block;
+  margin-top: 1rem;
+}

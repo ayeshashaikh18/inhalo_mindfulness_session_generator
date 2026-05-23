@@ -1,0 +1,114 @@
+:root {
+  --lavender: #C6B4DD;
+  --rosy-blush: #F4D7D5;
+  --buttermilk: #FFF5EA;
+  --plum-ink: #3D314A;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--buttermilk);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--lavender);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  background: var(--rosy-blush);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background: var(--lavender);
+  color: var(--white);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.journal-box, .doodle-box {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+textarea {
+  width: 95%;
+  height: 200px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--lavender);
+  resize: none;
+}
+
+.btns {
+  margin-top: 1rem;
+}
+
+button {
+  background: var(--lavender);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background: var(--plum-ink);
+}
+
+/* Canvas */
+canvas {
+  border: 2px solid var(--lavender);
+  border-radius: 8px;
+  background: var(--rosy-blush);
+}
+.toolbar {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+input[type="color"],
+input[type="range"] {
+  cursor: pointer;
+}
+
+.toolbar button {
+  background: var(--rosy-blush);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background: var(--lavender-deep);
+  color: var(--white);
+}

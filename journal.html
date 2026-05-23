@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inhalo Journal</title>
+  <link rel="stylesheet" href="journal.css">
+</head>
+<body>
+  <header>
+    <h1>📝 Your Personal Journal</h1>
+    <button onclick="window.location.href='dashboard.html'">← Back to Dashboard</button>
+  </header>
+
+  <main class="container">
+    <!-- Journal Writing Section -->
+    <section class="journal-box">
+      <h2>Write Your Thoughts</h2>
+      <textarea id="journal-text" placeholder="Write something calming..."></textarea>
+      <div class="btns">
+        <button onclick="saveJournal()">💾 Save</button>
+        <button onclick="clearJournal()">🗑 Clear</button>
+      </div>
+    </section>
+
+    <!-- Doodle Section -->
+    <section class="doodle-box">
+      <h2>Doodle Space</h2>
+      <div class="toolbar">
+        <label for="color">Brush Color:</label>
+        <input type="color" id="color" value="#3D314A">
+
+        <label for="size">Size:</label>
+        <input type="range" id="size" min="1" max="20" value="3">
+
+        <button onclick="downloadCanvas()">📥 Download</button>
+      </div>
+      <canvas id="doodleCanvas" width="500" height="400"></canvas>
+      <div class="btns">
+        <button onclick="clearCanvas()">🧹 Clear Doodle</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="journal.js"></script>
+</body>
+</html>

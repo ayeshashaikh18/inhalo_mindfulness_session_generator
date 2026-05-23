@@ -1,0 +1,91 @@
+:root {
+  --lavender: #C6B4DD;
+  --rosy-blush: #F4D7D5;
+  --buttermilk: #FFF5EA;
+  --dove-gray: #D4D4D4;
+  --plum-ink: #3D314A;
+  --lavender-deep: #9B85B8;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background: var(--buttermilk);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: var(--lavender);
+  color: var(--white);
+  padding: 2rem 1rem;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background: var(--lavender-deep);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.progress-section h1 {
+  color: var(--plum-ink);
+  margin-bottom: 1rem;
+}
+
+.progress-section p {
+  color: var(--plum-ink);
+  margin-bottom: 1.5rem;
+}
+
+#progress-list {
+  list-style: none;
+}
+
+#progress-list li {
+  background: var(--white);
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-left: 6px solid var(--lavender);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+#progress-list li:hover {
+  transform: scale(1.02);
+}

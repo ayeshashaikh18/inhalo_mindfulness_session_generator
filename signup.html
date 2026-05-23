@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inhalo | Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="signup-box">
+      <h1>🌿 Inhalo</h1>
+      <p>Create your mindfulness journey</p>
+      <form id="signupForm">
+  <div class="input-group">
+    <label for="username">Full Name</label>
+    <input type="text" id="username" placeholder="Enter your full name" required>
+  </div>
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+  </div>
+  <div class="input-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Create a password" required>
+  </div>
+  <button type="submit" class="btn">Sign Up</button>
+</form>
+
+<script>
+  document.getElementById("signupForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop real form submit
+    window.location.href = "dashboard.html"; // redirect to dashboard
+  });
+</script>
+
+      <p class="switch">Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+  </div>
+</body>
+</html>

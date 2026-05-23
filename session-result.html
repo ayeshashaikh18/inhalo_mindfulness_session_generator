@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session Result</title>
+  <link rel="stylesheet" href="session-result.css">
+</head>
+<body>
+  <div class="background">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+  </div>
+
+  <div class="session-container">
+    <div class="aura-ball" id="aura-ball">
+      <h2 id="session-title">Your Session</h2>
+      <p id="session-details"></p>
+
+      <!-- Custom Play/Pause Button -->
+      <div class="audio-controls">
+        <button id="playPauseBtn">▶</button>
+        <audio id="session-audio"></audio>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button onclick="window.location.href='session.html'">Take Another Session</button>
+      <button onclick="window.location.href='dashboard.html'">Go to Dashboard</button>
+    </div>
+  </div>
+
+  <script src="session-result.js"></script>
+</body>
+</html>

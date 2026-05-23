@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inhalo Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Inhalo</h2>
+    <ul>
+      <li><a href="dashboard.html" class="active">🏠 Dashboard</a></li>
+      <li><a href="progress.html">&#128640; Progress</a></li>
+      <li><a href="journal.html">📔 Journal</a></li>
+      <li><a href="explore.html">&#128163; Explore</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Welcome + Quote -->
+    <section class="welcome">
+      <h1>Welcome to your space 🌸</h1>
+      <p id="daily-quote">Loading your daily dose of calm...</p>
+    </section>
+
+    <!-- Dashboard Grid -->
+    <section class="grid">
+      <!-- Mood Tracker -->
+      <div class="card">
+        <h3>How are you feeling today?</h3>
+        <div class="mood-options">
+          <span class="mood">😊</span>
+          <span class="mood">😐</span>
+          <span class="mood">😢</span>
+          <span class="mood">😡</span>
+          <span class="mood">😴</span>
+        </div>
+        <p id="mood-status">Select your mood above 👆</p>
+      </div>
+
+      <!-- Session -->
+      <div class="card">
+        <h3>Session</h3>
+        <p>Ready to have your time and reflect on yourself?</p>
+        <button onclick="window.location.href='session.html'">Take Personalized Session 🎙️</button>
+      </div>
+
+      <!-- Quote Card -->
+      <div class="card">
+        <h3>Mindful Quote</h3>
+        <p id="quote-card">Loading inspiration...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

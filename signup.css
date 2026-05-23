@@ -1,0 +1,105 @@
+:root {
+  --lavender:       #C6B4DD;
+  --rosy-blush:     #F4D7D5;
+  --buttermilk:     #FFF5EA;
+  --dove-gray:      #D4D4D4;
+  --plum-ink:       #3D314A;
+  --lavender-deep:  #9B85B8;
+  --white:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--lavender), var(--rosy-blush));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+.signup-box {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.signup-box h1 {
+  font-size: 2rem;
+  color: var(--plum-ink);
+  margin-bottom: 0.5rem;
+}
+
+.signup-box p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: var(--plum-ink);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--dove-gray);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--lavender-deep);
+  box-shadow: 0 0 6px rgba(155,133,184,0.5);
+}
+
+.btn {
+  width: 100%;
+  background: var(--lavender-deep);
+  color: var(--white);
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--plum-ink);
+}
+
+.switch {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.switch a {
+  color: var(--lavender-deep);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}

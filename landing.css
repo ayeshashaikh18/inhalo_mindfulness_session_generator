@@ -1,0 +1,189 @@
+:root {
+  --lavender:       #C6B4DD;
+  --rosy-blush:     #F4D7D5;
+  --buttermilk:     #FFF5EA;
+  --dove-gray:      #D4D4D4;
+  --plum-ink:       #3D314A;
+  --lavender-deep:  #9B85B8;
+  --white:          #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--buttermilk);
+  color: var(--plum-ink);
+  line-height: 1.6;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--lavender);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo / Brand */
+.brand {
+  font-family:'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--plum-ink);
+}
+
+/* Nav links container */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Individual links */
+.nav-menu li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--plum-ink);
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+}
+
+/* Animated underline on hover */
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--lavender-deep);
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+.nav-menu li a:hover {
+  color: var(--lavender-deep);
+}
+
+.hero-bg {
+  background-image: url('inhalo_landingpg.jpg'); /* replace with your path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(61, 49, 74, 0.6); /* Plum-ink overlay */
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+.hero-overlay h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.btn {
+  background-color: var(--plum-ink);
+  color: var(--white);
+  padding: 0.95rem 1.95rem;
+  margin-top: 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--lavender-deep);
+}
+
+.about, .features, .cta {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--rosy-blush);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 220px;
+}
+
+footer {
+  background-color: var(--plum-ink);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#before-start {
+  margin-bottom: 0.5rem;
+  font-family:Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-below {
+  background-color: var(--plum-ink);
+  color: var(--white);
+  padding: 0.65rem 1.4rem;
+  margin-top: 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-below:hover {
+  background-color: var(--lavender-deep);
+}
